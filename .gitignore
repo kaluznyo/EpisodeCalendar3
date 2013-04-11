@@ -13,3 +13,4 @@ public/assets/uploads/*
 .DS_Store
 .rvmrc
 lib/tester.rb
+.idea/
