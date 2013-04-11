@@ -11,6 +11,9 @@ namespace :db do
     #Create note
     log = Log.create(:key => "banners_updated")
 
+    #Create temp folder if needed
+    FileUtils.mkdir_p('tmp/banners') unless File.directory?('tmp/banners')
+
     begin
 
       #Get API key
